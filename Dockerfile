@@ -1,3 +1,4 @@
 FROM sath89/oracle-ee-11g
 
-RUN echo "Asia/shanghai" > /etc/timezone;
+RUN echo "Asia/Shanghai" > /etc/timezone \
+  && cp -f /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
